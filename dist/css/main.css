@@ -13,11 +13,11 @@
 
 .btn-main {
   color: #333;
-  background-color: #00bfd8; }
+  background-color: #ffdc5d; }
 
 .btn-light {
   color: #333;
-  background-color: #f8f8f8; }
+  background-color: rgb(93, 173, 236); }
 
 .btn-dark {
   color: #f4f4f4;
@@ -26,7 +26,7 @@
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: #00bfd8; }
+  background-color: #ffdc5d; }
 
 .lead {
   font-size: 1.3rem;
@@ -73,15 +73,15 @@ img {
     padding: 1rem 1.5rem; }
   #main-nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: #f8f8f8; }
+      border-color: #5dadec; }
     #main-nav a.current {
-      border-color: #00bfd8; }
+      border-color: #ffdc5d; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
@@ -90,7 +90,36 @@ img {
   #header-home .header-content {
     text-align: center;
     padding-top: 20%;
-    padding-right: 50%; }
+    padding-right: 55%; }
     #header-home .header-content h1 {
       font-size: 3.5rem;
       line-height: 1.2; }
+
+span#wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block; }
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(-10deg); }
+  /* The following four values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(12deg); }
+  30% {
+    transform: rotate(-10deg); }
+  40% {
+    transform: rotate(9deg); }
+  50% {
+    transform: rotate(0deg); }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg); } }
