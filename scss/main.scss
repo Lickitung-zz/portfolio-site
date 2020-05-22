@@ -224,11 +224,15 @@ img {
 // About Sections
 #about {
     &-a {
+        padding-top: 5%;
+
         .about-info {
             display: grid;
             grid-template-areas:
                 'bioimage bio bio';
             grid-gap: 1.2rem;
+            padding-bottom: 12%;
+
         }
 
         // Grid Area
