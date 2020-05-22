@@ -221,6 +221,30 @@ img {
   }
 }
 
+// About Sections
+#about {
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                'bioimage bio bio';
+            grid-gap: 1.2rem;
+        }
+
+        // Grid Area
+        .bio-image {
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+        }
+    }
+}
+
+
 // Footer
 #main-footer {
     background: $medium-color;
