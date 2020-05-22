@@ -5,3 +5,12 @@ $light-color: #4dd0e1;
 $medium-color: #6d4c41;
 $dark-color: rgb(70, 70, 70);
 $bg-image: url('../img/showcase.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
