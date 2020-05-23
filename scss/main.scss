@@ -229,6 +229,7 @@ img {
         padding-top: 5%;
 
         .about-info {
+            font-size: 24px;
             display: grid;
             grid-template-areas:
                 'bioimage bio bio';
@@ -351,6 +352,10 @@ img {
             &:hover {
                 background: $main-color;
             }
+        }
+
+        a.icon {
+          color: #fff
         }
     }
 }

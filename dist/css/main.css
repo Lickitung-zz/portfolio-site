@@ -292,6 +292,7 @@ img {
 #about-a {
   padding-top: 5%; }
   #about-a .about-info {
+    font-size: 24px;
     display: grid;
     grid-template-areas: 'bioimage bio bio';
     grid-gap: 1.2rem;
@@ -365,6 +366,8 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #fac01b; }
+    #main-footer .footer-content a.icon {
+      color: #fff; }
 
 span#wave {
   animation-name: wave-animation;
@@ -399,7 +402,38 @@ span#wave {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      display: none; }
+    #header-home .header-content-mobile {
+      padding-top: 5%;
+      padding-right: 10%;
+      font-size: 14px; }
+  #intro {
+    font-size: 5px; }
+  #about-a {
+    padding-top: 8%;
+    padding-bottom: 40%; }
+    #about-a .about-info {
+      display: none; }
+    #about-a .about-info-mobile {
+      padding-top: 5%;
+      padding-bottom: 12%; }
+    #about-a .bio-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding-bottom: 8%; }
+    #about-a .bio {
+      border-left: 3px solid #fac01b;
+      border-radius: 1rem;
+      padding: 1rem;
+      padding-top: 0.8rem;
+      font-size: 24px; } }
+
+@media (min-width: 801px) {
+  .about-info-mobile {
+    display: none; }
+  .header-content-mobile {
+    display: none; } }
 
 @media (max-width: 500px) {
   #main-nav {
