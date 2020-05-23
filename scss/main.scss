@@ -281,7 +281,7 @@ img {
 
       .message-input {
         grid-area: message;
-        height: 100;
+        height: 100px;
       }
 
       .text-input {
@@ -387,3 +387,5 @@ span#wave {
     transform: rotate(0deg);
   }
 }
+//Import Media Queries
+@import 'media'

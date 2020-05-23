@@ -318,7 +318,7 @@ img {
     grid-area: phone; }
   #contact-a .text-fields .message-input {
     grid-area: message;
-    height: 100; }
+    height: 100px; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
@@ -394,3 +394,43 @@ span#wave {
   /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg); } }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #fac01b; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+  #home-a .specials,
+  #home-b .process,
+  .items {
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-color: 1px #4dd0e1 solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }
